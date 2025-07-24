@@ -26,6 +26,12 @@ ScholarSync implements several design patterns for clean architecture:
 2. **Strategy Pattern**: Applied in the recommendation engine to switch between different recommendation approaches
 3. **Factory Pattern**: Used for creating appropriate resume parsers based on file type
 
+## Live Demo
+
+🔗 **Deployed App**: [https://scholarsync-ten.vercel.app/]
+
+---
+
 ## Setup and Installation
 
 1. Clone the repository:
