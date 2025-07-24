@@ -1,0 +1,118 @@
+declare module '@testing-library/react' {
+  export function render(
+    ui: React.ReactElement,
+    options?: any
+  ): {
+    container: HTMLElement;
+    baseElement: HTMLElement;
+    debug: (baseElement?: HTMLElement | HTMLElement[]) => void;
+    unmount: () => boolean;
+    rerender: (ui: React.ReactElement) => void;
+    asFragment: () => DocumentFragment;
+    findAllByLabelText: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByLabelText: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByLabelText: (id: string | RegExp) => HTMLElement[];
+    getByLabelText: (id: string | RegExp) => HTMLElement;
+    queryAllByLabelText: (id: string | RegExp) => HTMLElement[];
+    queryByLabelText: (id: string | RegExp) => HTMLElement | null;
+    findAllByPlaceholderText: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByPlaceholderText: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByPlaceholderText: (id: string | RegExp) => HTMLElement[];
+    getByPlaceholderText: (id: string | RegExp) => HTMLElement;
+    queryAllByPlaceholderText: (id: string | RegExp) => HTMLElement[];
+    queryByPlaceholderText: (id: string | RegExp) => HTMLElement | null;
+    findAllByText: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByText: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByText: (id: string | RegExp) => HTMLElement[];
+    getByText: (id: string | RegExp) => HTMLElement;
+    queryAllByText: (id: string | RegExp) => HTMLElement[];
+    queryByText: (id: string | RegExp) => HTMLElement | null;
+    findAllByAltText: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByAltText: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByAltText: (id: string | RegExp) => HTMLElement[];
+    getByAltText: (id: string | RegExp) => HTMLElement;
+    queryAllByAltText: (id: string | RegExp) => HTMLElement[];
+    queryByAltText: (id: string | RegExp) => HTMLElement | null;
+    findAllByTitle: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByTitle: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByTitle: (id: string | RegExp) => HTMLElement[];
+    getByTitle: (id: string | RegExp) => HTMLElement;
+    queryAllByTitle: (id: string | RegExp) => HTMLElement[];
+    queryByTitle: (id: string | RegExp) => HTMLElement | null;
+    findAllByDisplayValue: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByDisplayValue: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByDisplayValue: (id: string | RegExp) => HTMLElement[];
+    getByDisplayValue: (id: string | RegExp) => HTMLElement;
+    queryAllByDisplayValue: (id: string | RegExp) => HTMLElement[];
+    queryByDisplayValue: (id: string | RegExp) => HTMLElement | null;
+    findAllByRole: (role: string, options?: any) => Promise<HTMLElement[]>;
+    findByRole: (role: string, options?: any) => Promise<HTMLElement>;
+    getAllByRole: (role: string, options?: any) => HTMLElement[];
+    getByRole: (role: string, options?: any) => HTMLElement;
+    queryAllByRole: (role: string, options?: any) => HTMLElement[];
+    queryByRole: (role: string, options?: any) => HTMLElement | null;
+    findAllByTestId: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByTestId: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByTestId: (id: string | RegExp) => HTMLElement[];
+    getByTestId: (id: string | RegExp) => HTMLElement;
+    queryAllByTestId: (id: string | RegExp) => HTMLElement[];
+    queryByTestId: (id: string | RegExp) => HTMLElement | null;
+  };
+
+  export const screen: {
+    debug: (baseElement?: HTMLElement | HTMLElement[]) => void;
+    findAllByLabelText: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByLabelText: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByLabelText: (id: string | RegExp) => HTMLElement[];
+    getByLabelText: (id: string | RegExp) => HTMLElement;
+    queryAllByLabelText: (id: string | RegExp) => HTMLElement[];
+    queryByLabelText: (id: string | RegExp) => HTMLElement | null;
+    findAllByPlaceholderText: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByPlaceholderText: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByPlaceholderText: (id: string | RegExp) => HTMLElement[];
+    getByPlaceholderText: (id: string | RegExp) => HTMLElement;
+    queryAllByPlaceholderText: (id: string | RegExp) => HTMLElement[];
+    queryByPlaceholderText: (id: string | RegExp) => HTMLElement | null;
+    findAllByText: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByText: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByText: (id: string | RegExp) => HTMLElement[];
+    getByText: (id: string | RegExp) => HTMLElement;
+    queryAllByText: (id: string | RegExp) => HTMLElement[];
+    queryByText: (id: string | RegExp) => HTMLElement | null;
+    findAllByAltText: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByAltText: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByAltText: (id: string | RegExp) => HTMLElement[];
+    getByAltText: (id: string | RegExp) => HTMLElement;
+    queryAllByAltText: (id: string | RegExp) => HTMLElement[];
+    queryByAltText: (id: string | RegExp) => HTMLElement | null;
+    findAllByTitle: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByTitle: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByTitle: (id: string | RegExp) => HTMLElement[];
+    getByTitle: (id: string | RegExp) => HTMLElement;
+    queryAllByTitle: (id: string | RegExp) => HTMLElement[];
+    queryByTitle: (id: string | RegExp) => HTMLElement | null;
+    findAllByDisplayValue: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByDisplayValue: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByDisplayValue: (id: string | RegExp) => HTMLElement[];
+    getByDisplayValue: (id: string | RegExp) => HTMLElement;
+    queryAllByDisplayValue: (id: string | RegExp) => HTMLElement[];
+    queryByDisplayValue: (id: string | RegExp) => HTMLElement | null;
+    findAllByRole: (role: string, options?: any) => Promise<HTMLElement[]>;
+    findByRole: (role: string, options?: any) => Promise<HTMLElement>;
+    getAllByRole: (role: string, options?: any) => HTMLElement[];
+    getByRole: (role: string, options?: any) => HTMLElement;
+    queryAllByRole: (role: string, options?: any) => HTMLElement[];
+    queryByRole: (role: string, options?: any) => HTMLElement | null;
+    findAllByTestId: (id: string | RegExp) => Promise<HTMLElement[]>;
+    findByTestId: (id: string | RegExp) => Promise<HTMLElement>;
+    getAllByTestId: (id: string | RegExp) => HTMLElement[];
+    getByTestId: (id: string | RegExp) => HTMLElement;
+    queryAllByTestId: (id: string | RegExp) => HTMLElement[];
+    queryByTestId: (id: string | RegExp) => HTMLElement | null;
+  };
+
+  export function fireEvent(element: HTMLElement, event: Event): boolean;
+  export const fireEvent: {
+    [key: string]: (element: HTMLElement, options?: any) => boolean;
+  };
+}
